@@ -1,0 +1,543 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Askia covers all your survey needs, whether CAPI, CATI or CAWI. More information is available on http://www.askia.com. -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta name="GENERATOR" content="AskiaExt" />
+		<meta name="Copyright" content="Copyright (c) Askia" />
+		<style type="text/css"> /* Empty style used by the AskiaScript */ </style>
+		<script type="text/javascript" src="./AskiaScript.js"></script>
+		<script type="text/javascript">
+			 try {
+				AskiaScript.pathOfScripts='./';
+				AskiaScript.languageId=1036;
+				AskiaScript.regional = { dateFormat : "dd/MM/yyyy", decimalSeparator : ",", thousandSeparator : " " };
+				AskiaScript.load(1.2, true);
+			 } 
+			 catch(ex){} 
+		</script>
+		<script type="text/javascript">function loadFormAskia(){}</script>
+		<meta charset="utf-8"> 
+<title></title> 
+ 
+<style type="text/css"> 
+  html { 
+	height: 100%; 
+  } 
+  body { 
+	background-color: #adb0b7; 
+	margin: 0px; 
+	padding: 0px; 
+  } 
+ 
+  /* Global font family - font size & color pour réponses*/ 
+  body, td, th, div, p, pre, a, li, input, select, textarea, label, legend { 
+	font-family: Georgia, "Times New Roman", Times, serif; 
+	font-size: 20px; 
+/*	line-height: 20px;*/ 
+	color: #555555; 
+/*	outline: none; 
+	text-decoration: none;*/ 
+  } 
+ 
+  /* Numerique & open */ 
+  input[type="text"] { 
+	background-color: #f4f4f4; 
+	/*border: 1px outset #ffffff;*/ 
+	text-align: center; 
+  } 
+  input[type="text"]:hover { 
+/*	border: 2px outset #ffffff;*/  } 
+ 
+  /* champs ouverts */ 
+  textarea { 
+	background-color: #f4f4f4; 
+/*	border: 1px outset #ffffff;*/ 
+  } 
+  textarea:hover { 
+/*	border: 2px outset #ffffff;*/ 
+  } 
+ 
+  /* Erreur */ 
+  #erreur { 
+	color: #E63c14; 
+                      font-size: 16px; 
+	text-align: center; 
+  } 
+   
+  /* Content size */ 
+  #headercontent, .framecontainer, { 
+	width: 92%; /*810px;*/ 
+  } 
+ 
+  /* global structure */ 
+  #global { 
+	position: absolute; 
+	width: 100%; 
+	overflow: visible; 
+	background-color: #FFFFFF; 
+	/*filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#adb0b7');*/ 
+  } 
+   
+  /* header structure */ 
+  #headercontainer { 
+	position: relative; 
+	top: 0px; 
+	left: 0px; 
+	width: 100%; 
+	height:48px; 
+	background-image:url(./fui/643/1530807650/gradient.png); 
+	background-repeat:repeat-x; 
+	background-position:top left; 
+ 
+/*background: -webkit-linear-gradient(center top , #505050, #343434) repeat scroll 0 0 transparent; 
+	background: -moz-linear-gradient(center top , #505050, #343434) repeat scroll 0 0 transparent; 
+background: -ms-linear-gradient(center top , #505050, #343434) repeat scroll 0 0 transparent; 
+background: -linear-gradient(center top , #505050, #343434) repeat scroll 0 0 transparent;*/ 
+ 
+    line-height: 39px; 
+	/*background: none repeat scroll 0% 0% #3a3a3a; 
+	height: 140px;*/ 
+	border-bottom: 1px groove #8facae; 
+	border-top:5px groove #E63C14; 
+	padding-top:5px; 
+ 
+  } 
+  #headercontent { 
+	position: relative; 
+	margin: 0 auto; 
+	height:103px; 
+	background-color:#FFFFFF; 
+	margin-top: 0px; 
+	background-image:url(./fui/643/1530807650/bg_lg2.jpg); 
+	background-repeat:no-repeat; 
+	background-position:top lett;	 
+ 
+border-bottom: 1px groove #CCC;	 
+	text-shadow: 0 1px 0px rgba(255, 255, 255, 0.8); 
+  }   
+  
+  #header{ 
+	width: 100%; 
+  } 
+  #header ul{ 
+	display: block; 
+  } 
+  #header, #header li{ 
+	list-style: none; 
+	display: inline-block; 
+	margin: 0; 
+	padding: 0; 
+  } 
+  #lilogo { 
+	text-align:right;  
+margin-top:-35px; 
+margin-right:5px; 
+	line-height:1.5em; 
+	font-family: Helvetica,Arial,sans-serif; 
+               	color: #FFF; 
+  } 
+  #lilogo1 img { 
+	width: 60px; 
+	height: 20px; 
+  } 
+   
+  /* progress bar structure */ 
+  #progress{ 
+	width: 100%;	 
+color:#FFF; 
+	font-family: Helvetica,Arial,sans-serif; 
+	font-size: 14px; 
+  } 
+  #progress ul{ 
+	display: block; 
+	height: 30px; 
+  } 
+  #progress, #progress li { 
+	list-style: none; 
+	display: inline-block; 
+	margin: 0; 
+	padding: 0; 
+  } 
+  #liprogress { 
+   	float: left; 
+	width: 100px; 
+	height: 4px; 
+	text-align: left; left:10px; 
+	border: 1px groove #FFF; 
+	background-color: #FFF; 
+	-webkit-border-radius: 1px; 
+	-moz-border-radius: 1px; 
+	border-radius: 1px;	 
+	margin-top:14px;margin-left:14px; 
+  } 
+  #liprogress div { 
+	height: 100%; 
+	background-color: #E63C14; 
+  } 
+   
+  /* frame structure */ 
+  .framecontainer { 
+	position: relative; 
+	top: 6px; 
+	margin: 0 auto; 
+	background: #ffffff; 
+	margin-top: 0px; 
+	border-right:  groove 1px #CCC; 
+	 
+	text-shadow: 0 1px 0px rgba(255, 255, 255, 0.8); 
+  } 
+  .framecontent { 
+	min-height: 360px; 
+	padding: 10px 30px 8px 30px; 
+	margin: 0; 
+  } 
+   
+  /* navigation structure */ 
+  #navcontainer{ 
+	display: inline-block; 
+	text-align: center; 
+	margin: 0; 
+	padding: 0; 
+	width: 100%; 
+  } 
+  #navcontent { 
+	position: relative; 
+	margin: 0 auto; 
+	padding: 5px 0 0 0; 
+  } 
+  #navcontentleft { 
+	display:inline; 
+	float: left; 
+	width: 5%; 
+	text-align: left; 
+	padding: 0; 
+  } 
+  #navcontentmiddle { 
+	display:inline; 
+	float: left; 
+	width: 89%; 
+	text-align: center; 
+	padding: 0; 
+  } 
+  #navcontentright { 
+	display:inline; 
+	float: left; 
+	width: 5%; 
+	text-align: right; 
+	padding: 0; 
+  } 
+  #navseparator { 
+	display: inline; 
+	margin: 0 100px 0 100px; 
+  } 
+ 
+ .wrapper{ 
+	 position: absolute; 
+	left: 0px; 
+	width: 100%; 
+ 
+	height:48px; 
+	background-image:url(./fui/643/1530807650/gradient.png); 
+	background-repeat:repeat-x; 
+	background-position:top left; 
+    line-height: 48px; 
+ bottom:0; 
+margin-right:5px; 
+}  
+ 
+ .footer-bottom{ 
+	margin-top: 5px; 
+	border-top: 1px groove #FFF; 
+	font-family: Helvetica,Arial,sans-serif; 
+	font-size: 12px; 
+	color: #505050; 
+} 
+ 
+.chapitre 
+{	color:#343434; 
+	font-size:24px; 
+	font-style:normal; 
+	font-weight: normal; 
+	text-align:left;	 
+	padding:7px; 
+ 
+margin-right:10px; 
+background-color:#F2F2F2; 
+background-repeat:no-repeat; 
+border-radius: 5px; 
+box-shadow:1px 1px 0px rgba(0, 0, 0, 0.2); 
+width:80% 
+	} 
+ 
+.question 
+{ 
+	font-family: Helvetica, Arial, Geneva, sans-serif; 
+	font-size:22px; 
+	font-style:normal; 
+	font-weight:bold; 
+	text-align:left; 
+color: #555555; 
+	background-image:url(./fui/643/1530807650/Question.png); 
+	background-repeat:no-repeat; 
+	background-position:top-left; 
+	padding-left:55px; 
+	padding-right:20px; 
+	padding-top:12px; 
+border-radius: 5px; 
+box-shadow:1px 1px 0px rgba(0, 0, 0, 0.1); 
+} 
+ 
+.question2 
+{ 
+	font-family: Helvetica, Arial, Geneva, sans-serif; 
+	font-size:22px; 
+	font-style:normal; 
+	font-weight:bold; 
+	text-align:left; 
+color: #555555; 
+	background-image:url(./fui/643/1530807650/Question.png); 
+	background-repeat:no-repeat; 
+	background-position:top-left; 
+	padding-left:55px; 
+	padding-right:20px; 
+	padding-top:12px; 
+border-radius: 5px; 
+box-shadow:1px 1px 0px rgba(0, 0, 0, 0.1); 
+width:80%; 
+} 
+ 
+.consigne 
+{ 
+	/*margin-bottom: 10px;*/ 
+	padding-top: 5px; 
+	padding-bottom: 18px; 
+	font-family: Helvetica, Arial, Geneva, sans-serif; 
+	font-size:16px; 
+	font-style: normal; 
+	font-weight:normal; 
+	text-align: left; 
+	color:#E63c14; 
+	padding-left:55px; 
+} 
+ 
+.reponse, .span, .numerical, .numerique 
+{ 
+	font-family: Helvetica, Arial, Geneva, sans-serif; 
+	padding-bottom:5px;padding-top:5px; 
+	font-size:18px; 
+	font-style:normal; 
+	font-weight:normal; 
+	color: #484848; 
+	padding-left:35px; 
+} 
+ 
+.entetequestion 
+{ 
+	padding: 5px; 
+	margin-bottom: 5px; 
+	font-family: Helvetica, Arial, Geneva, sans-serif; 
+	font-size:16px; 
+	font-style:normal; 
+	font-weight:bold; 
+	color: #484848; 
+	border-bottom: 1px groove #dedede; 
+} 
+ 
+.enteteq 
+{ 
+	padding: 5px; 
+	margin-bottom: 5px; 
+	font-family: Helvetica, Arial, Geneva, sans-serif; 
+	font-size:16px;	 
+	font-style:normal; 
+	font-weight:bold; 
+	color: #484848; 
+	border-bottom: 1px groove #dedede; 
+} 
+ 
+/*bouton */ 
+.btn { 
+ position:fixed; 
+ top:0; 
+ right:0; 
+ width:40px; 
+ height:100px; 
+  
+ text-align:right; 
+/*position:relative; */ 
+margin-top:40%; 
+padding-left:15px; 
+padding-right:15px; 
+padding-top:30px; 
+padding-bottom:30px; 
+margin-right:10px; 
+background-color:#343434; 
+background-repeat:no-repeat; 
+border-radius: 10px; 
+}  
+ 
+#lightbox{ 
+	background-color:#eee; 
+	padding: 10px; 
+	border-bottom: 2px groove #666; 
+	border-right: 2px groove #666; 
+} 
+#lightboxDetails{ 
+	font-size: 0.8em; 
+	padding-top: 0.4em; 
+}	 
+#lightboxCaption{ float: left; } 
+#keyboardMsg{ float: right; } 
+#closeButton{ top: 5px; right: 5px; } 
+ 
+#lightbox img{ border: none; }  
+#overlay img{ border: none; } 
+ 
+#overlay{ background-image: url(); } 
+ 
+  /* tables still need 'cellspacing="0"' in the markup */ 
+  table { 
+	border-collapse: collapse; 
+	border-spacing: 0; 
+  } 
+ 
+  ul { 
+	list-style: none; 
+	margin: 1%; 
+	padding: 0%; 
+  } 
+  ul li { 
+	background-color: #f7f7f7; 
+	color: #222; 
+	font-size: 1.1em; 
+	display: block; 
+	margin-bottom: 0em; 
+	padding: 0.4em 0.4em 0.4em 1.0em; 
+	text-decoration: none; 
+	border: 1px solid #a1a7ad; 
+	-webkit-border-radius: 8px; 
+	-moz-border-radius: 8px; 
+	border-radius: 8px; 
+   } 
+  ul li:hover { 
+	background-color: #ffffff; 
+   } 
+ 
+</style>
+	</head>
+	<body  onload="loadFormAskia();">
+<script type="text/javascript" src="./fui/643/1530807650/submit_speed.js"></script> 
+ 
+<div id="global"> 
+ 
+<div id="headercontainer"> 
+ 
+	<div id="progress"> 
+ 
+		<div id="liprogress" title="0%"> 
+        <div class="progressbar" style="width:0%;">&nbsp;</div> 
+ 
+</div><div style="color:#FFF; font-size:12px;"><b>&nbsp; 9 % </b></div> 
+ 	<div id="lilogo">DISNEY</div> 
+	</div> 
+ 
+</div> 
+ 
+<div style="background-color:#F2f2f2;border-bottom: 1px groove #CCC;">  
+    <div style="height:18px;"></div> 
+</div> 
+ 
+<div id="headercontent"> 
+ 
+	<div style="position: static"></div> 
+ 
+</div> 
+ 
+<div class="framecontainer"> 
+ 
+	<div class="framecontent"><br>
+<form name="FormAskia" action="http://askiaext.html/" >	<input type="hidden" name="Action" value="NextPage" />
+	<input type="hidden" name="Position" value="13" />
+<table  border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr >
+		<td  class="question askia-caption13" > <div class="consigne">Enquêteur : veuillez entrer le numéro de planning, cette information figure sur votre planning enquêteur </div><br>
+</td>
+	</tr>
+	<tr >
+		<td class="numerique"  > <input type="number" name="C13" size="10" value="" />
+</td>
+	</tr>
+</table>
+	<br/><br/><br/> 
+	</div> 
+</div> 
+<div id="navcontent"> 
+    	<div class="wrapper" align="right">		 
+			<img src="./fui/643/1530807650/logo.png" alt="BVA"> 
+			<div class="footer-bottom" align="right" style="margin-right:5px;"> Conditions d'utilisation &#169; 2013 BVA </div> 
+   </div>  
+</div> 
+</div> 
+<div class="btn"><input type="image" title="Précédent" id="back" src="./fui/643/1530807650/left.png" name="Previous" /><img src="./fui/643/1530807650/limit.png" /><input type="image" title="Suivant" id="next" src="./fui/643/1530807650/right.png" name="Next" /></div><input type="submit" value="<>" style="visibility:hidden" name="askiaStay" />
+<script type="text/javascript">
+	try {
+		//Mode to display the error when it's detected
+		ErrorStack.displayMode=eErrorDisplayMode.none;
+
+		//Mode to display the summary of errors messages on validation
+		ValidatorSummary.mode=eValidatorSummaryMode.NONE;
+	}
+	 catch(ex){/* Do Nothing */}
+</script>
+<!-- Initialize all questions when the page is loaded -->
+<script type="text/javascript">
+/* <![CDATA[ */
+	try {
+		QuestionHandler.add(new Question(13,'num planning','<div class=\"consigne\">Enquêteur : veuillez entrer le numéro de planning, cette information figure sur votre planning enquêteur </div>',eQuestionType.numeric,false,false,0,999)).init();
+
+	}
+	catch(ex){/* Do Nothing */}
+/* ]]> */
+</script>
+
+		</form><script type="text/javascript"> 
+$(document).ready(function() { 
+ 
+ 
+	setInterval(function() { 
+ 
+		$("div li:has(input)").each(function(e) { 
+			var selectedInput; 
+			selectedInput = 0; 
+			$(this).find("input").each(function(e) { 
+				if ($(this).is(":checked")) { 
+					selectedInput = 1; 
+				} 
+			}); 
+			 
+			if (selectedInput == 1) { 
+				$(this).css("background-color","#E63C14"); 
+				$(this).css("border","1px solid #FF6600"); 
+$(this).css("color","#FFFFFF"); 
+			} else { 
+				$(this).css("background-color",""); 
+				$(this).css("border","1px solid #a1a7ad"); 
+$(this).css("color","#000000"); 
+			} 
+		}); 
+ 
+	}, 100); 
+ 
+ 
+	$(".progressbar").animate({ 
+		width:"9%" 
+	}, 
+	/* Possible value "slow", "normal", "fast" or in milliseconds "500" 0.5 ms */ 
+	"500" 
+	); 
+ 
+}); 
+</script>
+
+	</body>
+</html>
